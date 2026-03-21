@@ -9,7 +9,7 @@ export async function onRequest(context) {
   const upi = context.env.UPI_ID;
   const name = context.env.NAME;
 
-  const upiLink = `upi://pay?pa=${upi}&pn=${encodeURIComponent(name)}&am=${amount}&cu=INR`;
+  const upiLink = `upi://pay?pa=${encodeURIComponent(upi)}&am=${amount}&cu=INR`;
 
   return Response.redirect(upiLink, 302);
 }

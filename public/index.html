@@ -12,10 +12,9 @@
     <div class="center">
   <div class="card" role="main" aria-labelledby="title">
     <div class="quote-wrap" id="intro">
-      <div class="quote" id="quoteText"></div>
-      <div class="sub">— <span id="quoteAuthor">Unknown</span></div>
-      <div class="muted sm"></div>
-    </div>
+  <div class="quote" id="quoteText"></div>
+  <div class="sub" id="quoteAuthorLine">— <span id="quoteAuthor">Unknown</span></div>
+</div>
 
     <div class="form" id="donationForm" aria-hidden="true">
       <h1 id="title" style="margin:0 0 0.6rem 0;font-size:1.15rem">Eid, sharing Joy & creating Memories!</h1>
@@ -65,11 +64,9 @@
   </div>
 </div>
 <script>
-
 document.getElementById("quoteText").textContent =
   "After every fast comes a feast, and after every hardship comes ease.";
-
-document.getElementById("quoteAuthor").textContent = "random quote on Eid";
+document.getElementById("quoteAuthor").textContent = "Someone on the internet";
 
 setTimeout(() => {
   document.getElementById("intro").style.display = "none";
@@ -77,7 +74,6 @@ setTimeout(() => {
   form.style.display = "block";
   form.setAttribute("aria-hidden", "false");
 }, 2000);
-
 
 document.getElementById("donateBtn").addEventListener("click", () => {
   const amount = document.getElementById("amount").value;

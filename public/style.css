@@ -66,35 +66,31 @@ html, body {
 .quote-wrap {
   max-width: 600px;
   margin: 0;
+  padding: 0;
 }
 
 .quote {
   font-size: 1.25rem;
-  line-height: 1.75;
+  line-height: 1.7;
   font-weight: 500;
   color: var(--accent);
-
-  text-align: left;      /* key change */
+  text-align: left;
   letter-spacing: 0.01em;
 
-  margin: 0 0 1.6rem 0;
+  margin: 0 0 0.45rem 0;
   opacity: 0;
-  animation: fadeIn 1.8s ease forwards;
+  animation: fadeIn 1s ease forwards;
 }
 
 .quote::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 2px;
-  background: var(--border);
-  margin-top: 1.2rem;
+  content: none;
 }
 
 .sub {
   font-size: 0.95rem;
   color: var(--muted);
-  margin-top: 0.4rem;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .loading-text {
