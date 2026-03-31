@@ -1,2 +1,2 @@
-# Eidi-for-Malik
+# Eidi-for-Burhan
 A simple UPI intent based Platform to receive "Eidi" money.
